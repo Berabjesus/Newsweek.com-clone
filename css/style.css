@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: #f4f5f6;
   font-family: "Roboto Condensed",sans-serif;
 }
 
@@ -26,8 +27,9 @@ p {
   border: 2px dashed rgb(12, 1, 1);
 }
 
-.no-border {
-  border: unset !important;
+.hover-none:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .width-custom {
@@ -99,6 +101,7 @@ p {
 .header-middle {
   position: relative;
   height: 53px;
+  background-color: white;
 }
 
 .header-middle::before {
@@ -139,4 +142,12 @@ p {
 
 .header-bottom {
   height: 43px;
+  background-color: white;
+  border-top: 2px #f4f5f6 solid;
+  border-bottom: 2px #f4f5f6 solid;
+}
+
+.header-bottom a {
+  margin: 0 1rem;
+  font-weight: 700;
 }
