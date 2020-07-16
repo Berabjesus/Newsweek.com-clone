@@ -47,6 +47,10 @@ p {
   background-color: #f72210 ;
 }
 
+.avatar img {
+  width: 20px;
+}
+
 .fixednav-btn-login {
   color: white;
   font-size: large;
@@ -117,7 +121,7 @@ p {
 }
 
 .header-middle_links {
-  width: 90%;
+  width: 88%;
 }
 
 .header-middle_links li {
@@ -125,7 +129,7 @@ p {
 }
 
 .header-middle_links a {
-  padding: 0 calc(1.8vw - 10px);
+  padding: 0 calc(1.7vw - 10px);
   color: black;
   font-family: "Roboto Condensed",sans-serif;
   font-weight: 700;
@@ -158,4 +162,13 @@ p {
 .header-bottom a {
   margin: 0 1rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .fixednav-btns > * {
+    margin: 0 calc(1vw - 10px) !important;
+  }
+  .fixednav-btn-subsc, .fixednav-btn-toggle {
+    transform: scale(0.7);
+  }
 }

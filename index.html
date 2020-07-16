@@ -10,12 +10,13 @@
 </head>
 <body>
   <!-- Fixed navbar that shows up after scrolling starts here-->
-  <nav id="fixedNav" class=" justify-content-between fixednav border-temp">
+  <nav id="fixedNav" class="justify-content-between fixednav d-flex d-lg-none">
     <a class="brand m-2 col-2" href="#">
       <img class="h-75 m-1" src="./media/image/header-logo.png" alt="Newsweek">
     </a>
-    <div class="mr-2 fixednav-btns border-temp">
-      <a href="#" class="btn btn-link font-weight-bold mx-1 fixednav-btn-login">LOGIN</a>
+    <div class="mr-2 fixednav-btns">
+      <a class="avatar d-inline-block d-md-none" href="#"><img src="https://img.icons8.com/ultraviolet/40/000000/gender-neutral-user.png"/></a>
+      <a class="btn btn-link font-weight-bold mx-1 fixednav-btn-login d-none d-md-inline-block" href="#" >LOGIN</a>
       <button class="align-self-center text-uppercase font-weight-bold mx-1 py-0 btn fixednav-btn-subsc" type="button">subscribe <p class="d-inline">&#10095;</p></button>
       <button class="p-0 mx-1 btn fixednav-btn-toggle" type="button">
         <div class="my-1"></div>
@@ -27,8 +28,8 @@
 
   <!-- /* main Header starts here */ -->
 
-  <header class="container-fluid p-0 border-temp">
-    <div class="main-header width-custom mx-auto">
+  <header class="main-header container-fluid p-0 d-none d-lg-block border-temp">
+    <div class="main-header-container width-custom mx-auto">
       <section class="row w-100 m-0 header-top">
         <div class="header-top_weather-date py-1 pl-4 col-4 d-flex flex-column flex-shrink-1 justify-content-center">
           <div class="weather my-2 d-flex">
@@ -82,19 +83,20 @@
       </section>  
     </div>
   </header>
-
+  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script>
+var item = document.getElementById("fixedNav");
 window.addEventListener("scroll", fixedNav);
 
 function fixedNav() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
     if (window.innerWidth >= 992)
-    document.getElementById("fixedNav").style.display = "flex";
+    item.classList.remove("d-lg-none")
   } else {
-    document.getElementById("fixedNav").style.display = "none";
+    item.classList.add("d-lg-none")
   }
 }
 
