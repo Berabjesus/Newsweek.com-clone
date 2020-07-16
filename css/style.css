@@ -3,6 +3,14 @@
     border: 1.5px dashed blue;
 }
 
+.border-temp-1 {
+    border: 2px dashed rgb(12, 1, 1);
+}
+
+.p-custom {
+    padding: 0 104px;
+}
+
 /* Fixed navbar starts here */
 
 .fixednav {
@@ -39,4 +47,11 @@
     width: 100%;
     height: 4px;
     background-color: rgb(199, 194, 194);
+}
+
+/* main Header starts here */
+
+.header-top {
+    width: 100%;
+    height: 95px;
 }
