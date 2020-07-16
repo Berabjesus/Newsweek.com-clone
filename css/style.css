@@ -116,13 +116,21 @@ p {
     border-top: 13px solid #f72210;
 }
 
+.header-middle_links {
+  width: 90%;
+}
+
+.header-middle_links li {
+  border-right: 1px solid rgb(219, 209, 209);
+}
+
 .header-middle_links a {
-  padding: 0 1rem;
+  padding: 0 calc(1.8vw - 10px);
   color: black;
   font-family: "Roboto Condensed",sans-serif;
   font-weight: 700;
-  font-size: 21px;
-  border-right: 1px solid rgb(199, 194, 194);
+  font-size: 19px;
+  white-space: nowrap;
 }
 
 .header-middle_links a:hover {
