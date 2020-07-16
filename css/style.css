@@ -67,6 +67,14 @@
   font-weight: 700;
   margin: 0 0.2rem;
 }
+.header-top_logo {
+  /* min-width: 360px !important; */
+}
+
+.header-top_logo > img {
+  height: 100%;
+  width: 390px;
+}
 
 .header-middle {
   height: 53px;
