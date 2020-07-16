@@ -1,10 +1,18 @@
 /* Defaults */
+* {
+  box-sizing: border-box;
+}
+
 .border-temp {
   border: 1.5px dashed blue;
 }
 
 .border-temp-1 {
   border: 2px dashed rgb(12, 1, 1);
+}
+
+.no-border {
+  border: unset !important;
 }
 
 .width-custom {
@@ -88,6 +96,15 @@
     background-color: #f72210;
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
+}
+
+.header-middle_links a {
+  padding: 0 1rem;
+  color: black;
+  font-family: "Roboto Condensed",sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-right: 1px solid rgb(199, 194, 194);
 }
 
 .header-bottom {
