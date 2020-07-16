@@ -52,6 +52,13 @@
 /* main Header starts here */
 
 .header-top {
-    width: 100%;
     height: 95px;
+}
+
+.header-middle {
+    height: 53px;
+}
+
+.header-bottom {
+    height: 43px;
 }
