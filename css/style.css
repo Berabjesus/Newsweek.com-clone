@@ -67,9 +67,6 @@
   font-weight: 700;
   margin: 0 0.2rem;
 }
-.header-top_logo {
-  /* min-width: 360px !important; */
-}
 
 .header-top_logo > img {
   height: 100%;
@@ -77,7 +74,20 @@
 }
 
 .header-middle {
+  position: relative;
   height: 53px;
+}
+
+.header-middle::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 70px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
 }
 
 .header-bottom {
