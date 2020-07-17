@@ -3,8 +3,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color1: #f4f5f6;
+  --color2: #c7c7c7;
+}
+
 body {
-  background-color: #f4f5f6;
+  background-color: var(--color1);
   font-family: "Roboto Condensed",sans-serif;
 }
 
@@ -279,10 +284,33 @@ p {
   background-color: rgba(206, 207, 206, 0.966);
 }
 
+.news-stories {
+  height: 1050px;
+  overflow-y: auto;
+}
+
 .news-stories-container {
-  /* min-height: 96px; */
+  min-height: 110px !important;
+  border-top: 1px solid var(--color2);
 }
 
 .news-stories-avatar {
-  /* height: 95px !important; */
+  height: 95px !important;
+}
+
+.stories-header {
+  font-size: 18px;
+}
+
+.news-stories::-webkit-scrollbar {
+  width: 10px;
+}
+
+.news-debate-avatar img {
+  width: 63px;
+  height: 63px;
+}
+
+.news-debate-content-header {
+  font-size: 16px;
 }
