@@ -47,6 +47,10 @@ p {
   margin: 0.7rem 0;
 }
 
+.card {
+  border: unset;
+}
+
 /* Fixed navbar starts here */
 
 .fixednav {
@@ -196,7 +200,7 @@ p {
 }
 
 .main-news-col-1 {
-  width: 30%;
+  /* max-width: 30% !important; */
 }
 
 .main-news-col-1 .card {
@@ -206,7 +210,8 @@ p {
 .main-news-col-1 .card-custom-img {
   position: relative;
   width: 100%;
-  max-height: 230px;
+  max-height: 260px;
+  overflow: hidden;
 }
 
 .card-img-overlay {
@@ -245,5 +250,31 @@ p {
   position: relative;
   width: 100%;
   max-height: 310px;
+  overflow: hidden;
 }
 
+.news-grid .card-custom-img {
+  height: 160px;
+}
+
+.news-grid img {
+  height: 100%;
+}
+
+.news-grid .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0.7rem 0;
+}
+
+.news-grid .card-title a {
+  color: rgba(3,3,3,.4) !important;
+}
+
+.news-grid .card-img-overlay {
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  color: black;
+  background-color: rgba(206, 207, 206, 0.966);
+}
