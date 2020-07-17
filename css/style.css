@@ -34,6 +34,10 @@ p {
   border: 2px dashed rgb(12, 1, 1);
 }
 
+.border-temp-2 {
+  border: 3px dashed yellowgreen !important;
+}
+
 .hover-none:hover {
   text-decoration: none;
   color: white;
@@ -60,6 +64,14 @@ p {
 
 .main-bg {
   background-color: var(--main-color);
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.h-auto {
+  height: auto !important;
 }
 
 /* Fixed navbar starts here */
@@ -211,10 +223,6 @@ p {
   width: 100%;
 }
 
-.main-news-col-1 {
-  /* max-width: 30% !important; */
-}
-
 .main-news-col-1 .card {
   margin: 0 0 0.8rem 0;
 }
@@ -273,13 +281,15 @@ p {
   height: 100%;
 }
 
-.news-grid .card-title {
+.news-grid .card-title,
+.news-grid-mig {
   font-size: 16px;
   font-weight: 600;
   margin: 0.7rem 0;
 }
 
-.news-grid .card-title a {
+.news-grid .card-title a,
+.news-grid-mig .card-title a {
   color: rgba(3,3,3,.4) !important;
 }
 
@@ -354,4 +364,57 @@ p {
   height: 29px;
   width: 50px !important;
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+@media screen and (max-width: 767px) {
+  .max-height-custom {
+    max-height: 90vh !important;
+  }
+
+  .min-height-custom {
+    min-height: 90vh !important;
+  }
+
+  .sm-height-custom {
+    height: 80vh !important;
+  }
+
+  .news-stories {
+    height: auto;
+  }
+  .news-grid-mig h6 {
+    font-size: 16px !important;
+  }
+
+}
+
+/* magazine section starts here */
+
+.news-magazine .card-img-overlay {
+  position: absolute;
+  bottom: 50px;
+}
+
+.news-magazine img {
+  object-fit: cover !important;
+}
+
+.news-magazine .card{
+  height: auto !important;
+  /* max-height: 500px !important; */
+}
+
+.news-magazine {
+  height: auto !important;
+}
+
+.news-magazine .card-body {
+  height: auto !important;
+  white-space: normal !important;
+}
+
+.ww {
+  width: 25%;
+  height: auto;
+  white-space: normal;
 }
