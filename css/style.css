@@ -344,3 +344,13 @@ p {
 .news-opinion-profile {
   border-bottom: 1px solid var(--color2);
 }
+
+.form-header-icon {
+  height: 29px;
+  width: 45px !important;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.form-header-title {
+  font-size: 20px;
+}
