@@ -6,6 +6,7 @@
 :root {
   --color1: #f4f5f6;
   --color2: #c7c7c7;
+  --color3: black
 }
 
 body {
@@ -198,6 +199,7 @@ p {
 
 .main-container {
   background-color: #fff;
+  padding-right: 0 !important;
 }
 
 .main-news {
@@ -306,6 +308,11 @@ p {
   width: 10px;
 }
 
+.news-debate-container {
+  border-top: 3px solid var(--color2);
+  border-bottom: 3px solid var(--color2);
+}
+
 .news-debate-avatar img {
   width: 63px;
   height: 63px;
@@ -313,4 +320,23 @@ p {
 
 .news-debate-content-header {
   font-size: 16px;
+}
+
+.news-debate-divider {
+  position: relative;
+  border-top: double 4px var(--color2);
+}
+
+.divider-icon {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: var(--color3);
+  line-height: 35px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 50%;
 }
