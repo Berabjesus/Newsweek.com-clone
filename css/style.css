@@ -278,3 +278,11 @@ p {
   color: black;
   background-color: rgba(206, 207, 206, 0.966);
 }
+
+.news-stories-container {
+  /* min-height: 96px; */
+}
+
+.news-stories-avatar {
+  /* height: 95px !important; */
+}
