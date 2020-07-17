@@ -340,3 +340,7 @@ p {
   font-weight: 700;
   border-radius: 50%;
 }
+
+.news-opinion-profile {
+  border-bottom: 1px solid var(--color2);
+}
