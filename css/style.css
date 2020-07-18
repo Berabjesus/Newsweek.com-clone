@@ -420,3 +420,38 @@ p {
 .news-subscribe .position-absolute {
   left: 20%;
 }
+
+.news-letter img {
+  object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .news-subscribe .jumbotron {
+    position: relative;
+    padding: 2rem 0 !important;
+    height: 320px !important;
+  }
+
+  .subsc-img-cont {
+    position: absolute !important;
+    top: 5%;
+    left: 30%;
+    z-index: 0;
+    align-self: center;
+  }
+
+  .subsc-txt-cont {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    align-self: end;
+  }
+}
+
+.footer-icons li {
+  margin: 0 0.2rem;
+}
+
+
