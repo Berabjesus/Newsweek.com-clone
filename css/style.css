@@ -394,7 +394,6 @@ p {
 
 .news-magazine .card-custom-img {
   position: relative;
-  /* height: 200px; */
 }
 
 
@@ -418,7 +417,6 @@ p {
   padding-left: 0 !important;
 }
 
-.news-stories-content {
-  /* margin: 0 !important; */
-  /* padding: 0 0.01rem !important; */
+.news-subscribe .position-absolute {
+  left: 20%;
 }
