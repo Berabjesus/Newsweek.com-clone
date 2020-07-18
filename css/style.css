@@ -1,6 +1,7 @@
 /* Defaults */
 * {
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -217,6 +218,7 @@ p {
 .main-container {
   background-color: #fff;
   padding-right: 0 !important;
+  height: auto !important;
 }
 
 .main-news {
@@ -362,7 +364,7 @@ p {
 
 .form-header-icon {
   height: 29px;
-  width: 50px !important;
+  width: 30px;
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
 }
 
@@ -390,31 +392,33 @@ p {
 
 /* magazine section starts here */
 
+.news-magazine .card-custom-img {
+  position: relative;
+  /* height: 200px; */
+}
+
+
 .news-magazine .card-img-overlay {
   position: absolute;
-  bottom: 50px;
+  bottom: 10vh;
 }
 
-.news-magazine img {
-  object-fit: cover !important;
+.news-world, .news-world * {
+  overflow-x: hidden !important;
 }
 
-.news-magazine .card{
-  height: auto !important;
-  /* max-height: 500px !important; */
+.news-world-stories > div > div{
+  width: 96px !important;
+  height: 86px !important;
 }
 
-.news-magazine {
-  height: auto !important;
+.news-world-stories {
+  overflow-x: hidden;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
-.news-magazine .card-body {
-  height: auto !important;
-  white-space: normal !important;
-}
-
-.ww {
-  width: 25%;
-  height: auto;
-  white-space: normal;
+.news-stories-content {
+  /* margin: 0 !important; */
+  /* padding: 0 0.01rem !important; */
 }
