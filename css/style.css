@@ -32,7 +32,7 @@ p {
 }
 
 .border-temp-1 {
-  border: 2px dashed rgb(12, 1, 1) !important;
+  border: 2px dashed rgb(12, 1, 1);
 }
 
 .border-temp-2 {
@@ -389,8 +389,14 @@ p {
   height: 20vw;
 }
 
+.news-letter,
+.news-letter * {
+  overflow-x: hidden !important;
+}
+
 .news-letter img {
   object-fit: cover;
+  height: 320px;
 }
 
 .news-world-stories .img-cont > img {
@@ -418,22 +424,21 @@ p {
   .news-subscribe .jumbotron {
     position: relative;
     padding: 2rem 0;
-    height: 420px;
+    height: 330px;
   }
 
   .subsc-img-cont {
     position: absolute;
-    top: 5%;
+    top: -10%;
     left: 30%;
     z-index: 0;
     align-self: center;
   }
 
   .subsc-txt-cont {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    width: 100%;
-    align-self: end;
+    width: 90%;
   }
 }
 
