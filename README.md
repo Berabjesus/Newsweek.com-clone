@@ -12,7 +12,7 @@ This project is Milestone 7 of the HTML/CSS curriculum under Microverse.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Berabjesus/Newsweek.com-clone/950e01b17f4f8043e59c8084c75d023b73d8d15a/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Berabjesus/Newsweek.com-clone/03c1c454020eb424092abf614aa3c0e10c05b52e/index.html)
 ## Authors
 
 👤 **Bereket Beshane**
