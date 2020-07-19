@@ -1,8 +1,6 @@
 /* Defaults */
 * {
   box-sizing: border-box;
-
-  /* overflow-x: hidden; */
 }
 
 :root {
@@ -34,7 +32,7 @@ p {
 }
 
 .border-temp-1 {
-  border: 2px dashed rgb(12, 1, 1);
+  border: 2px dashed rgb(12, 1, 1) !important;
 }
 
 .border-temp-2 {
@@ -165,14 +163,12 @@ p {
 .header-middle_links a {
   padding: 0 calc(1.7vw - 10px);
   color: black;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 19px;
   white-space: nowrap;
 }
 
 .header-middle_search > p {
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 19px;
 }
 
@@ -183,7 +179,6 @@ p {
 
 .header-bottom {
   height: 43px;
-  background-color: white;
   border-top: 2px #f4f5f6 solid;
   border-bottom: 2px #f4f5f6 solid;
 }
@@ -200,7 +195,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .fixednav-btns > * {
-    margin: 0 calc(1vw - 10px) !important;
+    margin: 0 calc(1vw - 10px);
   }
 
   .fixednav-btn-subsc,
@@ -211,25 +206,16 @@ p {
 
 /* Main section starts here */
 
-.main-container {
-  background-color: #fff;
-  padding-right: 0 !important;
-  height: auto !important;
-}
-
-.main-news {
-  width: 100%;
-}
-
-.main-news-col-1 .card {
-  margin: 0 0 0.8rem 0;
-}
-
-.main-news-col-1 .card-custom-img {
+.main-news-col-1 .card-custom-img,
+.main-news-col-2 .card-custom-img {
   position: relative;
   width: 100%;
   max-height: 260px;
   overflow: hidden;
+}
+
+.main-news-col-2 .card-custom-img {
+  max-height: 310px;
 }
 
 .card-img-overlay {
@@ -245,7 +231,6 @@ p {
   text-align: center;
   font-size: 17px;
   font-weight: 700;
-  color: #f72210;
   background-color: rgba(240, 255, 240, 0.966);
 }
 
@@ -259,17 +244,6 @@ p {
 .main-news-col-1 .card-text,
 .main-news-col-2 .card-text {
   font-size: 17px;
-}
-
-.main-news-col-2 {
-  width: 42%;
-}
-
-.main-news-col-2 .card-custom-img {
-  position: relative;
-  width: 100%;
-  max-height: 310px;
-  overflow: hidden;
 }
 
 .news-grid .card-custom-img {
@@ -289,7 +263,7 @@ p {
 
 .news-grid .card-title a,
 .news-grid-mig .card-title a {
-  color: rgba(3, 3, 3, 0.4) !important;
+  color: rgba(3, 3, 3, 0.4);
 }
 
 .news-grid .card-img-overlay {
@@ -306,7 +280,7 @@ p {
 }
 
 .news-stories-container {
-  min-height: 110px !important;
+  min-height: 110px;
   border-top: 1px solid var(--color2);
 }
 
@@ -364,28 +338,38 @@ p {
 .form-header-icon {
   height: 29px;
   width: 30px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat var(--main-color);
 }
 
 @media screen and (max-width: 767px) {
+  .main-news-col-1 .card-custom-img,
+  .main-news-col-2 .card-custom-img {
+    position: relative;
+    width: 100%;
+    max-height: 75vh;
+    overflow: hidden;
+  }
+
+  .main-news-col-1 .card-title,
+  .main-news-col-2 .card-title {
+    font-size: 20px;
+  }
+
+  .main-news-col-1 .card-text,
+  .main-news-col-2 .card-text {
+    font-size: 14px;
+  }
+
   .max-height-custom {
-    max-height: 90vh !important;
-  }
-
-  .min-height-custom {
-    min-height: 90vh !important;
-  }
-
-  .sm-height-custom {
-    height: 80vh !important;
+    max-height: 90vh;
   }
 
   .news-stories {
     height: auto;
   }
 
-  .news-grid-mig h6 {
-    font-size: 16px !important;
+  .news-grid-mig .card-title {
+    font-size: 16px;
   }
 }
 
