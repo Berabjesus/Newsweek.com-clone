@@ -9,6 +9,7 @@
   --color1: #f4f5f6;
   --color2: #c7c7c7;
   --color3: black;
+  --text-header: rgba(3, 3, 3, 0.4);
   --main-color: #f72210;
 }
 
@@ -37,7 +38,7 @@ p {
 }
 
 .border-temp-2 {
-  border: 3px dashed yellowgreen !important;
+  border: 3px dashed yellowgreen;
 }
 
 .hover-none:hover {
@@ -45,8 +46,8 @@ p {
   color: white;
 }
 
-.hover-link-cards {
-  text-decoration-color: #f72210 !important;
+.hover-link-cards:hover {
+  text-decoration-color: #f72210;
 }
 
 .width-custom {
@@ -54,7 +55,7 @@ p {
 }
 
 .news-catagory {
-  color: rgba(3, 3, 3, 0.4);
+  color: var(--text-header);
   font-size: 16px;
   font-weight: 600;
   margin: 0.7rem 0;
@@ -68,13 +69,14 @@ p {
   background-color: var(--main-color);
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .main-color {
   color: var(--main-color);
 }
 
-.h-auto {
-  height: auto !important;
-}
 
 /* Fixed navbar starts here */
 
@@ -82,10 +84,7 @@ p {
   position: fixed;
   top: 0;
   z-index: 100;
-  display: none;
-  width: 100%;
   height: 50px;
-  background-color: #f72210;
 }
 
 .avatar img {
@@ -141,9 +140,7 @@ p {
 }
 
 .header-middle {
-  position: relative;
   height: 53px;
-  background-color: white;
 }
 
 .header-middle::before {
@@ -314,7 +311,7 @@ p {
   border-top: 1px solid var(--color2);
 }
 
-.news-stories-avatar, 
+.news-stories-avatar,
 .news-stories-avatar img {
   width: 95px;
   height: 95px;
