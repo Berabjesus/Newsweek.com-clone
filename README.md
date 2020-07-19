@@ -1,7 +1,7 @@
 # Responsive Design Using Bootstrap CSS Framework
 The purpose of this project is to recreate the webpage https://www.newsweek.com/ using Bootstrap by giving emphasis on responsiveness.
 
-![screenshot](media/screenshot.JPG)
+![screenshot](media/screenshot-new.JPG)
 
 This project is Milestone 7 of the HTML/CSS curriculum under Microverse. 
 
