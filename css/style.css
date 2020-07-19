@@ -389,9 +389,8 @@ p {
   height: 20vw;
 }
 
-.news-world,
-.news-world * {
-  /* overflow-x: hidden; */
+.news-letter img {
+  object-fit: cover;
 }
 
 .news-world-stories .img-cont > img {
@@ -404,12 +403,8 @@ p {
   left: 20%;
 }
 
-.news-letter img {
-  object-fit: cover;
-}
-
 @media screen and (max-width: 991px) {
-  .news-letter img{
+  .news-letter img {
     height: 40vh;
   }
 }
@@ -419,6 +414,7 @@ p {
     width: 100%;
     height: auto;
   }
+
   .news-subscribe .jumbotron {
     position: relative;
     padding: 2rem 0;
@@ -441,6 +437,12 @@ p {
   }
 }
 
+/* Footer section starts here */
+
 .footer-icons li {
   margin: 0 0.2rem;
+}
+
+.footer-logo {
+  width: 250px;
 }
