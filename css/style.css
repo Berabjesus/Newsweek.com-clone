@@ -123,7 +123,10 @@ p {
 
 .header-top {
   height: 95px;
-  background-color: #f72210;
+}
+
+.header-top_logo img {
+  margin: 0 0 0 -30px;
 }
 
 .weather > img {
@@ -132,10 +135,7 @@ p {
 }
 
 .weather p {
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0 0.2rem;
+  font-size: 16px;
 }
 
 .header-top_logo > img {
