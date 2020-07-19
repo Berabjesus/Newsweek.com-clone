@@ -391,7 +391,7 @@ p {
 
 .news-letter,
 .news-letter * {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 .news-letter img {
