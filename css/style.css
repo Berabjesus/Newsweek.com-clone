@@ -49,7 +49,7 @@ img {
 }
 
 .hover-link-cards:hover {
-  text-decoration-color: #f72210;
+  text-decoration-color: var(--main-color);
 }
 
 .width-custom {
@@ -151,9 +151,9 @@ img {
   content: "";
   display: block;
   width: 70px;
-  background-color: var(--ma);
+  background-color: var(--main-color);
   border-left: 12px solid white;
-  border-top: 13px solid #f72210;
+  border-top: 13px solid var(--main-color);
 }
 
 .header-middle_links {
