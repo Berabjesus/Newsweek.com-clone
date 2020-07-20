@@ -193,7 +193,7 @@ img {
 }
 
 .header-middle_links a:hover {
-  color: #f72210;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -403,7 +403,6 @@ img {
 }
 
 .news-letter img {
-  object-fit: cover;
   height: 320px;
 }
 
