@@ -27,12 +27,16 @@ p {
   padding: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 .border-temp {
   border: 1.5px dashed blue;
 }
 
 .border-temp-1 {
-  border: 2px dashed rgb(12, 1, 1);
+  border: 2px dashed rgb(12, 1, 1) !important;
 }
 
 .border-temp-2 {
@@ -147,7 +151,7 @@ p {
   content: "";
   display: block;
   width: 70px;
-  background-color: #f72210;
+  background-color: var(--ma);
   border-left: 12px solid white;
   border-top: 13px solid #f72210;
 }
@@ -381,7 +385,11 @@ p {
 
 .news-magazine .card-img-overlay {
   position: absolute;
-  bottom: 6vh;
+  bottom: 43px;
+}
+
+.editors-pick .card-img-overlay {
+  bottom: 0;
 }
 
 .mag-images {
